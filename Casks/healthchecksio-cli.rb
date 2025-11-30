@@ -17,28 +17,28 @@ cask "healthchecksio-cli" do
   on_macos do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_x86_64.tar.gz"
-      sha256 "e62d6a7f853176bbea433ca3aeded8caa9a39ffb108ad249a545da312939b6cf"
+      sha256 "7a54afba1f2bc43c5025ecfc0a2960204dccbe19df13251114337b80cead6dac"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_arm64.tar.gz"
-      sha256 "9a4db2fe812343de6bcab9f74b2b88823ecc3d0824c0124cc240ed0697aeb3e7"
+      sha256 "e18703916d7ab90c8161735e761a74a830a32452f5e71e3f7d530df9e28ec439"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_x86_64.tar.gz"
-      sha256 "6fcaba683818d103ee8f1ea10819f536167d0d6592a76c36291cbd7060e8fac5"
+      sha256 "e4107bab22da02412eb75271b5bf8213f3eed3329c34821a0f0d1718416bf4f4"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_arm64.tar.gz"
-      sha256 "7dc6c7cd9bb7fb6a68c37a10a4aa274666af2542aea06e5355cf2fb22918bf07"
+      sha256 "b421aa77718ef0b3a2682c9a6a981d30756dd02dd054f27391f1b0f9406487a7"
     end
   end
 
   postflight do
     if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/foo"]
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/healthchecksio-cli"]
     end
   end
 
