@@ -17,22 +17,22 @@ cask "healthchecksio-cli" do
   on_macos do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_x86_64.tar.gz"
-      sha256 "0c292d6dbd275a3bd558b98e3459b61366925de82aadff9bb2a35658a2a2ee61"
+      sha256 "77fbaf33cc05e665d6c868efe2111abb880e5b160d2de69b020cb4efcda179cb"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_arm64.tar.gz"
-      sha256 "abd7ba1a689b1094a48f46a560d2e9609c55b6d5e67cc815cf1334bd92f2a3d0"
+      sha256 "e11d9dfa1554d2aca8cbed5b32c840a4b1e3d34a75a394bfc504782239bab87e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_x86_64.tar.gz"
-      sha256 "bfcae8de16c084ef3897bf2e0409ebcdcab0885f01d659b93a5911a189e7ae08"
+      sha256 "e4807b38869d09a69abf6c612c0c6f86fe7cba5bd06801d1903e67512cf6ad3c"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_arm64.tar.gz"
-      sha256 "d559cfcb2004c0b1450c97178c53e01238e6556e22acb4973174d4aac3ba77d0"
+      sha256 "dfd25c72fe70dfe797d43bb3e13de9d1ced87193ec772ee2be1613eaa0ea67a8"
     end
   end
 
