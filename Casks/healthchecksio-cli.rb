@@ -3,7 +3,7 @@ cask "healthchecksio-cli" do
   name "healthchecksio-cli"
   desc "A simple CLI for healthchecks.io."
   homepage "https://github.com/sosheskaz/healthchecksio-cli"
-  version "1.1.2"
+  version "1.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "healthchecksio-cli" do
   on_macos do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_x86_64.tar.gz"
-      sha256 "7a54afba1f2bc43c5025ecfc0a2960204dccbe19df13251114337b80cead6dac"
+      sha256 "c9a1f6d27dda947600b841c724acad18b601f6be44e75981f52d430200f3aff9"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Darwin_arm64.tar.gz"
-      sha256 "e18703916d7ab90c8161735e761a74a830a32452f5e71e3f7d530df9e28ec439"
+      sha256 "44a6b813e89fd3f313c3172a6ac966683ea4c73841ad6503703d2cb6e60f66d1"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_x86_64.tar.gz"
-      sha256 "e4107bab22da02412eb75271b5bf8213f3eed3329c34821a0f0d1718416bf4f4"
+      sha256 "ed0daff2116f33b963224adf5fb2a34ac569bfdf6ed36303f7ad2ea4b71f10f0"
     end
     on_arm do
       url "https://github.com/sosheskaz/healthchecksio-cli/releases/download/v#{version}/healthchecksio-cli_Linux_arm64.tar.gz"
-      sha256 "b421aa77718ef0b3a2682c9a6a981d30756dd02dd054f27391f1b0f9406487a7"
+      sha256 "6587dc3abdb43b9a0f418c424f9ac7004dcddc6201e5e92dae544c27ad7e21b5"
     end
   end
 
